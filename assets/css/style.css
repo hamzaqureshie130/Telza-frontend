@@ -599,7 +599,7 @@ a {
 a#scrollUp {
   background: #265153;
   color: #fff;
-  bottom: 40px;
+  bottom: 94px;
   right: 40px;
   border-radius: 100px;
   height: 45px;
@@ -1417,6 +1417,7 @@ Blocks Styles
     margin: 0 22px; }
     .mainmenu li a {
       color: #fefefe;
+      mix-blend-mode: difference;
       display: block;
       font-size: 18px;
       font-weight: 500;
@@ -4536,9 +4537,9 @@ input[type="submit"] {
  #whatsapp-float{
     position: fixed;
     right: 37px;
-    bottom: 94px;
-    width: 50px;
-    height: 47px;
+    bottom: 15px;
+    width: 52px;
+    height: 52px;
     background: #25D366; /* WhatsApp brand green */
     background-color: #25D366; /* WhatsApp green */
     border-radius: 50%;
@@ -4919,7 +4920,7 @@ input[type="submit"] {
 }
 
 .contact-icon {
-  width: 40px;
+  padding: 16px;
   height: 40px;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 50%;
@@ -4988,9 +4989,145 @@ input[type="submit"] {
   background: #265153;
 }
 
+/* cutsom helper */
+.icon-wrapper-custom {
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 28px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .contact-info, .contact-form {
     padding: 30px;
   }
+  .custom-gap{
+    gap: 12px;
+  }
+  a#scrollUp{
+    bottom:96px
+  }
+  .m-top-92{
+    margin-top: 92px;
+  }
+}
+
+.blog-img {
+  width: 300px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 23px;
+}
+
+@media (max-width: 1147px) {
+  .blog-img {
+    width: 100% !important;
+    height: 378 !important;
+  }
+}
+
+
+
+/* Dropdown Styles */
+.mainmenu .drop {
+    position: relative;
+}
+
+.mainmenu .drop:hover .dropdown__menu {
+    display: block; /* Desktop hover */
+}
+
+.dropdown__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 180px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 999;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown__menu li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown__menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown__menu li a:hover {
+    background-color: #f2f2f2;
+}
+
+/* Mobile: relative dropdown */
+@media (max-width: 992px) {
+    .dropdown__menu {
+        position: relative;
+        box-shadow: none;
+    }
+}
+/* Dropdown item hover styles */
+.dropdown__menu li a:hover {
+    background-color: black;  /* Change background color on hover */
+    color: #fff;                /* Change text color on hover */
+    transition: 0.3s;           /* Smooth transition */
+}
+
+/* Optional: add a little padding change for a subtle effect */
+.dropdown__menu li a:hover {
+    padding-left: 25px;         /* Slide effect on hover */
+}
+
+#header-area {
+    transition: background-color 0.3s ease;
+}
+
+/* Header style after scrolling */
+#header-area.scrolled {
+    background-color: #255140; /* Change to any green you like */
+    
+}
+/* Header text and links on scroll */
+
+/* Optional: change button background on scroll */
+#header-area.scrolled .voopo__btn.white__btn {
+    background-color: #ffffff; /* White button background */
+    color: #255140;            /* Text in green */
+    transition: all 0.3s ease;
+}
+
+
+#serviceSelect {
+    background-color: #ffffff;   /* White background */
+    color: #000000;              /* Black text */
+    border: 1px solid #ccc;      /* Optional border */
+    width: 200px;                /* Set desired width */
+    height: 45px;                /* Set desired height */
+    padding: 5px 10px;           /* Optional padding */
+    border-radius: 5px;          /* Optional rounded corners */
+    font-size: 16px;             /* Optional font size */
+}
+
+/* Placeholder color */
+#serviceSelect option[disabled] {
+    color: #888; /* Gray placeholder text */
+}
+
+/* Optional: hover and focus effect */
+#serviceSelect:focus {
+    outline: none;
+    border-color: #007bff;      /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
