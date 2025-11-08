@@ -49,46 +49,71 @@
 <div class="wrapper" id="wrapper">
 
   <!-- Header -->
-  <header id="header-area" class="header-area">
+	<header id="header-area" class="fixed-top">
+  
     <div class="container">
-      <div class="row align-items-center d-none d-lg-flex">
-        <div class="col-lg-3">
-          <div class="logo">
-            <a href="index.html">
-              <img src="assets/images/logo/logo.png" alt="Telza">
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <nav class="mainmenu__nav">
-            <ul class="mainmenu">
-              <li><a href="index.html">Home</a></li>
-              <li class="drop"><a href="service.html">Service</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="#faq-section">FAQ's</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-lg-3">
-          <div class="header__btn">
-            <a class="voopo__btn white__btn" href="#">Get Started</a>
-          </div>
-        </div>
-      </div>
+        <div class="d-none d-lg-flex" style=" justify-content: space-between; align-items: center;">
+            <div class="">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo/logo.png" alt="voopo">
+                    </a>
+                </div>
+            </div>
+            <div class="">
+                <nav class="mainmenu__nav">
+                    <ul class="mainmenu" style="align-items: center;">
+                        <li class="drop">
+                            <a href="index.html">Home</a>
+                            <!-- <ul class="dropdown__menu">
+                                <li><a href="index.html">Home version 01</a></li>
+                                <li><a href="index-2.html">Home version 02</a></li>
+                            </ul> -->
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <!-- <li><a href="service.html">Service </a></li> -->
+                        <li class="drop">
+                         <a href="service.html" class="drop-toggle">Services </a>
+                           <ul class="dropdown__menu">
+                           <li><a href="service.html">All</a></li>
+                           <li><a href="service-detail-voip-solution.html">Voip Solution</a></li>
+                           <li><a href="service-detail-sip-trunking.html">SIP Trunking</a></li>
+                           <li><a href="service-detail-toll-free-number.html">Toll free Number</a></li>
+                           <li><a href="service-detail-international-calling.html">Internation Calling</a></li>
+                           <li><a href="service-detail-call-center-solutions.html">Call Center Solution</a></li>
+                           <li><a href="service-detail-cloud-pbx.html">Cloud PBX</a></li>
 
-      <!-- Mobile Menu -->
-      <div class="mobile-menu d-block d-lg-none">
-        <div class="logo">
-          <a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
+
+                            </ul>
+                          </li>
+
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                      
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div class="">
+                <div class="header__btn">
+                    <a class="voopo__btn white__btn" href="#">Get Started</a>
+                </div>
+            </div>
         </div>
-        <div class="header__btn">
-          <a class="voopo__btn white__btn" href="#">Buy Now</a>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu d-block d-lg-none">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
+            </div>
+            <div class="header__btn">
+                <a class="voopo__btn white__btn" href="#">Buy Now</a>
+            </div>
         </div>
-      </div>
+        <!-- Mobile Menu -->
     </div>
-  </header>
+</header>
   <!-- //Header -->
  <!-- Start Bradcaump area -->
  <div class="pr__bradcaump__area bg-image--5">
@@ -207,5 +232,31 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/active.js"></script>
+ <script>
+  // If you already have window.onload logic, merge with that.
+  window.addEventListener('load', function(){ document.body.classList.add('loaded'); });
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdownToggles = document.querySelectorAll('.drop-toggle');
+
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault(); // prevent page jump
+            const dropdown = this.nextElementSibling;
+            dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+        });
+    });
+});
+
+window.addEventListener('scroll', function() {
+    const header = document.getElementById('header-area');
+    if (window.scrollY > 50) { // Change 50 to how far you want to scroll
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+  AOS.init();
+</script>
 </body>
 </html>
