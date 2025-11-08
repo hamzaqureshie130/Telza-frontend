@@ -742,6 +742,7 @@ textarea {
 .bg--cart-11 {
   background: #f8f9fa; }
 
+
 /* Background Image */
 .bg-image--1 {
   background-image: url(/assets/images/bg/1.jpg);
@@ -1447,7 +1448,7 @@ Blocks Styles
     position: relative; }
     .mainmenu > li.drop > ul.dropdown__menu {
       background: #fff none repeat scroll 0 0;
-      border-top: 3px solid #bd4e45;
+      border-top: 3px solid green;
       box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
       left: 0;
       margin: 0;
@@ -2611,6 +2612,7 @@ background: linear-gradient(-90deg, #71FE8F, #c5c5c5);
   .voopo__process .content h4 {
     font-size: 20px;
     line-height: 24px; } }
+    
 /*------------------
     Software Styles 
 ---------------------*/
@@ -4476,7 +4478,7 @@ input[type="submit"] {
 
 /* Slightly larger logo */
 .logo img {
-    max-width: 100px; /* increased from 85px */
+    max-width: 150px; /* increased from 85px */
     height: auto;
     object-fit: contain;
     display: block;
@@ -5077,6 +5079,16 @@ input[type="submit"] {
 .dropdown__menu li a:hover {
     background-color: #f2f2f2;
 }
+@media (max-width: 768px) {
+  a#scrollUp {
+    width: 50px;   /* smaller width on mobile */
+    height: 50px;  /* smaller height on mobile */
+  }
+  .mr-icon-sm{
+    margin-left: 118px;
+  }
+}
+
 
 /* Mobile: relative dropdown */
 @media (max-width: 992px) {
@@ -5118,11 +5130,11 @@ input[type="submit"] {
 
 #serviceSelect {
     background-color: #ffffff;   /* White background */
-    color: #000000;              /* Black text */
+    color: #495057;              /* Black text */
     border: 1px solid #ccc;      /* Optional border */
-    width: 200px;                /* Set desired width */
+    width: 100%;                /* Set desired width */
     height: 45px;                /* Set desired height */
-    padding: 5px 10px;           /* Optional padding */
+              /* Optional padding */
     border-radius: 5px;          /* Optional rounded corners */
     font-size: 16px;             /* Optional font size */
 }
@@ -5137,4 +5149,48 @@ input[type="submit"] {
     outline: none;
     border-color: #007bff;      /* Change border color on focus */
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.custom-select:focus {
+  border-color: #71FE8F !important; /* Green border */
+  box-shadow: 0 0 5px 2px #71FE8F; /* Soft green glow */
+  outline: none !important;
+}
+
+/* Green text and background hover on options (modern browsers only) */
+.custom-select option:hover {
+  background-color: #71FE8F !important;
+  color: #fff !important;
+}
+
+/* Optional: green border on hover for the select box */
+.custom-select:hover {
+  border-color: #71FE8F;
+}
+
+.p-parent{
+  position: relative; top: -82px; left: 32px;
+}
+.init-logo-footer{
+ position: relative; top: -42px;
+}
+
+@media (max-width: 975px) {
+  .p-parent {
+    position: relative !important;
+    top: -50px !important;
+    left: 0 !important;
+  }
+  .init-logo-footer{
+ position: relative; top: 0; left: -22px;
+}
+.gap-x{
+  gap: 12px;
+}
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 62px;
+    }
 }
