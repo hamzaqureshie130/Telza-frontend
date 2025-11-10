@@ -14,7 +14,7 @@
 
   <!-- Google font -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,500i,700" rel="stylesheet">
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/plugins.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -113,7 +113,7 @@
   <!-- Main wrapper -->
   <div class="wrapper" id="wrapper">
     <!-- Header -->
- 	<header id="header-area" class="fixed-top">
+	<header id="header-area" class="fixed-top">
   
     <div class="container">
         <div class="d-none d-lg-flex" style=" justify-content: space-between; align-items: center;">
@@ -139,18 +139,15 @@
                         <li class="drop">
                          <a href="service.html" class="drop-toggle">Services </a>
                            <ul class="dropdown__menu">
-                          <li><a href="service.html">All</a></li>
-                           <li><a href="service-detail-voip-solution.html">Voip Solution</a></li>
-                           <li><a href="service-detail-sip-trunking.html">SIP Trunking</a></li>
-                           <li><a href="service-detail-toll-free-number.html">Toll free Number</a></li>
-                           <li><a href="service-detail-international-calling.html">Internation Calling</a></li>
-                           <li><a href="service-detail-call-center-solutions.html">Call Center Solution</a></li>
-                           <li><a href="service-detail-cloud-pbx.html">Cloud PBX</a></li>
-
-
+                           <li><a href="service.html" class="color-blending">All</a></li>
+                           <li><a href="service-detail-voip-solution.html" class="color-blending">Voip Solution</a></li>
+                           <li><a href="service-detail-sip-trunking.html" class="color-blending">SIP Trunking</a></li>
+                           <li><a href="service-detail-toll-free-number.html" class="color-blending">Toll free Number</a></li>
+                           <li><a href="service-detail-international-calling.html" class="color-blending">Internation Calling</a></li>
+                           <li><a href="service-detail-call-center-solutions.html" class="color-blending">Call Center Solution</a></li>
+                           <li><a href="service-detail-cloud-pbx.html" class="color-blending">Cloud PBX</a></li>
                             </ul>
                           </li>
-
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="pricing.html">Pricing</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -382,7 +379,7 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <div id="accordionInternational" class="panora_accordion">
-              <div class="card">
+              <div class="card" data-aos="fade-down">
                 <div class="acc-header" id="int1">
                   <h5><a data-toggle="collapse" href="#int1c">What countries are supported?</a></h5>
                 </div>
@@ -390,7 +387,7 @@
                   <div class="card-body">Over 200 destinations, including popular ones like USA, UK, India, Pakistan, UAE, and more.</div>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-aos="fade-down">
                 <div class="acc-header" id="int2">
                   <h5><a class="collapsed" data-toggle="collapse" href="#int2c">How are rates calculated?</a></h5>
                 </div>
@@ -398,7 +395,7 @@
                   <div class="card-body">Per-minute billing, rounded to the second. Check our rate deck for exact prices.</div>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-aos="fade-down">
                 <div class="acc-header" id="int3">
                   <h5><a class="collapsed" data-toggle="collapse" href="#int3c">Is caller ID supported internationally?</a></h5>
                 </div>
@@ -406,7 +403,7 @@
                   <div class="card-body">Yes, with CLI guarantee on premium routes—your number displays correctly.</div>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-aos="fade-down">
                 <div class="acc-header" id="int4">
                   <h5><a class="collapsed" data-toggle="collapse" href="#int4c">Are there unlimited plans?</a></h5>
                 </div>
@@ -414,7 +411,7 @@
                   <div class="card-body">Yes, for select high-volume countries—contact sales for details.</div>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-aos="fade-down">
                 <div class="acc-header" id="int5">
                   <h5><a class="collapsed" data-toggle="collapse" href="#int5c">How do I top up my account?</a></h5>
                 </div>
@@ -473,11 +470,8 @@
 <li><a href="service-detail-sip-trunking.html">SIP Trunking</a></li>
 <li><a href="service-detail-toll-free-number.html">Toll-Free Numbers</a></li>
 <li><a href="service-detail-call-center-solutions.html">Call Center Solutions</a></li>
-<li><a href="service-detail-international-calling.html">International Calling</a></li>
- <li><a href="service-detail-predective-dialer.html">Predective dialer</a></li>
- <li><a href="Service-detail-Ai-Dailer.html">Ai dialer</a></li>
- <li><a href="services-detail-lead-generatiom.html">lead-generation</a></li>
- <li><a href="service-detail-click-to-call.html">click-to-call</a></li>
+<li><a href="service.html">All</a></li>
+
 
 
 
@@ -562,6 +556,7 @@
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/plugins.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="assets/js/active.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
   <script>
@@ -587,7 +582,7 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 });
-
+ AOS.init();
 </script>
 </body>
 </html>

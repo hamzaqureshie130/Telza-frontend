@@ -11,7 +11,7 @@
   <!-- Favicons -->
   <link rel="shortcut icon" href="assets/images/Telza favicon_io/favicon-32x32.png">
   <link rel="apple-touch-icon" href="assets/images/Telza favicon_io/apple-touch-icon.png">
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Google font -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,500i,700" rel="stylesheet">
 
@@ -113,7 +113,7 @@
   <!-- Main wrapper -->
   <div class="wrapper" id="wrapper">
     <!-- Header -->
-   	<header id="header-area" class="fixed-top">
+	<header id="header-area" class="fixed-top">
   
     <div class="container">
         <div class="d-none d-lg-flex" style=" justify-content: space-between; align-items: center;">
@@ -139,17 +139,15 @@
                         <li class="drop">
                          <a href="service.html" class="drop-toggle">Services </a>
                            <ul class="dropdown__menu">
-                            <li><a href="service.html">All</a></li>
-                           <li><a href="service-detail-voip-solution.html">Voip Solution</a></li>
-                           <li><a href="service-detail-sip-trunking.html">SIP Trunking</a></li>
-                           <li><a href="service-detail-toll-free-number.html">Toll free Number</a></li>
-                           <li><a href="service-detail-international-calling.html">Internation Calling</a></li>
-                           <li><a href="service-detail-call-center-solutions.html">Call Center Solution</a></li>
-                           <li><a href="service-detail-cloud-pbx.html">Cloud PBX</a></li>
-
+                           <li><a href="service.html" class="color-blending">All</a></li>
+                           <li><a href="service-detail-voip-solution.html" class="color-blending">Voip Solution</a></li>
+                           <li><a href="service-detail-sip-trunking.html" class="color-blending">SIP Trunking</a></li>
+                           <li><a href="service-detail-toll-free-number.html" class="color-blending">Toll free Number</a></li>
+                           <li><a href="service-detail-international-calling.html" class="color-blending">Internation Calling</a></li>
+                           <li><a href="service-detail-call-center-solutions.html" class="color-blending">Call Center Solution</a></li>
+                           <li><a href="service-detail-cloud-pbx.html" class="color-blending">Cloud PBX</a></li>
                             </ul>
                           </li>
-
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="pricing.html">Pricing</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -381,7 +379,7 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <div id="accordionTollFree" class="panora_accordion">
-              <div class="card">
+              <div class="card" data-aos="fade-down">
                 <div class="acc-header" id="tf1">
                   <h5><a data-toggle="collapse" href="#tf1c">What are Toll-Free Numbers?</a></h5>
                 </div>
@@ -389,7 +387,7 @@
                   <div class="card-body">Caller pays nothing; you cover the cost. Includes 800, 888, 877, 866, etc., for nationwide access.</div>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-aos="fade-down">
                 <div class="acc-header" id="tf2">
                   <h5><a class="collapsed" data-toggle="collapse" href="#tf2c">Can I port my existing toll-free number?</a></h5>
                 </div>
@@ -397,7 +395,7 @@
                   <div class="card-body">Yes! Free porting with zero downtime—our team handles everything.</div>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-aos="fade-down">
                 <div class="acc-header" id="tf3">
                   <h5><a class="collapsed" data-toggle="collapse" href="#tf3c">Are vanity numbers available?</a></h5>
                 </div>
@@ -405,7 +403,7 @@
                   <div class="card-body">Absolutely. Search our database for memorable options like 1-800-YOUR-BRAND.</div>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-aos="fade-down">
                 <div class="acc-header" id="tf4">
                   <h5><a class="collapsed" data-toggle="collapse" href="#tf4c">How much do incoming calls cost?</a></h5>
                 </div>
@@ -413,7 +411,7 @@
                   <div class="card-body">Competitive per-minute rates starting low. Volume discounts and bundled plans available.</div>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-aos="fade-down">
                 <div class="acc-header" id="tf5">
                   <h5><a class="collapsed" data-toggle="collapse" href="#tf5c">Can I use SMS with toll-free?</a></h5>
                 </div>
@@ -472,11 +470,7 @@
 <li><a href="service-detail-sip-trunking.html">SIP Trunking</a></li>
 <li><a href="service-detail-toll-free-number.html">Toll-Free Numbers</a></li>
 <li><a href="service-detail-call-center-solutions.html">Call Center Solutions</a></li>
-<li><a href="service-detail-international-calling.html">International Calling</a></li>
- <li><a href="service-detail-predective-dialer.html">Predective dialer</a></li>
- <li><a href="Service-detail-Ai-Dailer.html">Ai dialer</a></li>
- <li><a href="services-detail-lead-generatiom.html">lead-generation</a></li>
- <li><a href="service-detail-click-to-call.html">click-to-call</a></li>
+<li><a href="service.html">All</a></li>
 
 
 
@@ -560,6 +554,7 @@
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/plugins.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="assets/js/active.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
  <script>
@@ -585,7 +580,7 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 });
-
+ AOS.init();
 </script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Call Center Solutions - Telza | VOIP, Telecom and Cloud Services Provider</title>
+  <title>AI Dialer Platform | Intelligent Call Automation and Predictive Outreach</title>
   <base href="./">
   <meta name="description" content="Empower your call center with Telza’s intelligent tools: real-time analytics, CRM integrations, smart routing, and live monitoring for unmatched productivity.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
   <!-- Favicons -->
   <link rel="shortcut icon" href="assets/images/Telza favicon_io/favicon-32x32.png">
   <link rel="apple-touch-icon" href="assets/images/Telza favicon_io/apple-touch-icon.png">
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Google font -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,500i,700" rel="stylesheet">
 
@@ -111,9 +111,7 @@
 
 <body>
   <!-- Main wrapper -->
-  <div class="wrapper" id="wrapper">
-    <!-- Header -->
-   	<header id="header-area" class="fixed-top">
+	<header id="header-area" class="fixed-top">
   
     <div class="container">
         <div class="d-none d-lg-flex" style=" justify-content: space-between; align-items: center;">
@@ -139,18 +137,16 @@
                         <li class="drop">
                          <a href="service.html" class="drop-toggle">Services </a>
                            <ul class="dropdown__menu">
-                         <li><a href="service.html">All</a></li>
-                           <li><a href="service-detail-voip-solution.html">Voip Solution</a></li>
-                           <li><a href="service-detail-sip-trunking.html">SIP Trunking</a></li>
-                           <li><a href="service-detail-toll-free-number.html">Toll free Number</a></li>
-                           <li><a href="service-detail-international-calling.html">Internation Calling</a></li>
-                           <li><a href="service-detail-call-center-solutions.html">Call Center Solution</a></li>
-                           <li><a href="service-detail-cloud-pbx.html">Cloud PBX</a></li>
-
-
+                           <li><a href="service.html" class="color-blending">All</a></li>
+                           <li><a href="service-detail-voip-solution.html" class="color-blending">Voip Solution</a></li>
+                           <li><a href="service-detail-sip-trunking.html" class="color-blending">SIP Trunking</a></li>
+                           <li><a href="service-detail-toll-free-number.html" class="color-blending">Toll free Number</a></li>
+                           <li><a href="service-detail-international-calling.html" class="color-blending">Internation Calling</a></li>
+                           <li><a href="service-detail-call-center-solutions.html" class="color-blending">Call Center Solution</a></li>
+                           <li><a href="service-detail-cloud-pbx.html" class="color-blending">Cloud PBX</a></li>
+                           
                             </ul>
                           </li>
-
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="pricing.html">Pricing</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -178,262 +174,267 @@
         <!-- Mobile Menu -->
     </div>
 </header>
-    <!-- //Header -->
-
- <!-- Start Bradcaump area -->
+  <!-- //Main wrapper -->
+   <!-- Bradcaump / Hero Area -->
 <div class="pr__bradcaump__area bg-image--5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="bradcaump__inner text-left">
-            <h2 class="bradcaump-title">AI Dialer Solutions</h2>
-          </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="bradcaump__inner text-left">
+          <h2 class="bradcaump-title">AI Dialer Solutions</h2>
         </div>
       </div>
     </div>
   </div>
-  <!-- End Bradcaump area -->
-  
-  <!-- Service Overview -->
-  <section class="voopo__service ptb--120 bg--white">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center mb-5">
-          <h2 class="custom-heading">AI Dialer for Intelligent Call Automation</h2>
-          <p class="custom-subheading lead">
-            Telza’s AI Dialer leverages artificial intelligence to optimize outbound and inbound campaigns, enhancing agent productivity and improving contact outcomes with smart automation and predictive insights.
-          </p>
-        </div>
-      </div>
-  
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <p class="detail-paragraph">
-            Automate call distribution using AI-powered algorithms that learn patterns and optimize dialing pace in real-time. Connect agents to the right calls while reducing idle time and maximizing conversion rates.
-          </p>
-          <p class="detail-paragraph">
-            AI-driven insights provide supervisors with actionable analytics. Monitor agent performance, call quality, and campaign outcomes with live dashboards, automated alerts, and call recording analysis.
-          </p>
-          <p class="detail-paragraph">
-            Seamlessly integrate with CRMs like Salesforce, HubSpot, and Zendesk. Use AI-assisted lead prioritization, smart click-to-call, and multichannel engagement including voice, SMS, and email to boost campaign efficiency.
-          </p>
-          <p class="detail-paragraph">
-            Cloud-based and fully scalable, the AI Dialer ensures high availability and security. Quickly add agents, maintain data integrity with enterprise-grade encryption, and achieve optimal ROI with intelligent call automation.
-          </p>
-        </div>
-      </div>
-  
-      <div class="feature-grid">
-        <div class="feature-card">
-          <i class="bi bi-robot"></i>
-          <h4>AI-Powered Call Distribution</h4>
-          <p>Automatically connects agents to high-priority leads for maximum results.</p>
-        </div>
-        <div class="feature-card">
-          <i class="bi bi-plug"></i>
-          <h4>CRM Integration</h4>
-          <p>Seamless AI-assisted integration with Salesforce, HubSpot, Zendesk, and more.</p>
-        </div>
-        <div class="feature-card">
-          <i class="bi bi-eye"></i>
-          <h4>Real-Time Analytics & Monitoring</h4>
-          <p>Track campaign performance, agent activity, and predictive insights live.</p>
-        </div>
+</div>
+<!-- End Bradcaump area -->
+
+<!-- Service Overview -->
+<section class="voopo__service ptb--120 bg--white">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center mb-5">
+        <h2 class="custom-heading">Revolutionize Your Communication with AI-Powered Dialing</h2>
+        <p class="custom-subheading lead">
+          Telza’s AI Dialer automates outbound and inbound calling with precision and intelligence.
+          Powered by advanced machine learning, speech analytics, and real-time decision-making,
+          our platform maximizes agent efficiency, boosts conversions, and enhances customer experience.
+        </p>
       </div>
     </div>
-  </section>
-  
+
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <p class="detail-paragraph">
+          Traditional dialers waste time with manual processes and idle agents. Telza AI Dialer
+          uses predictive algorithms to connect agents only when a live customer answers — reducing
+          wait times and increasing productivity. Our system dynamically adjusts dialing speed
+          based on performance and compliance metrics.
+        </p>
+        <p class="detail-paragraph">
+          Integrated natural language processing (NLP) enables intelligent call routing, voicemail
+          detection, and speech-to-text transcription. Monitor conversations in real-time with
+          sentiment analysis and automatic scoring to enhance agent coaching and quality assurance.
+        </p>
+        <p class="detail-paragraph">
+          With full CRM and API integrations, you can automate follow-ups, manage leads,
+          and trigger workflows instantly. The cloud-based architecture ensures security,
+          scalability, and reliability with 99.99% uptime across global regions.
+        </p>
+      </div>
+    </div>
+
+    <!-- AI Dialer Features -->
+    <div class="feature-grid">
+      <div class="feature-card">
+        <i class="fa-solid fa-robot"></i>
+        <h4>Smart Predictive Dialing</h4>
+        <p>AI algorithms optimize call pacing and connection rates for maximum efficiency.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-waveform"></i>
+        <h4>Speech Recognition</h4>
+        <p>Real-time NLP for call classification, sentiment analysis, and agent assistance.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h4>Secure & Compliant</h4>
+        <p>End-to-end encryption, GDPR-ready, and TCPA-compliant for peace of mind.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Key Features & Benefits -->
 <section class="ptb--120" style="background: #f8f9fa;">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <img src="assets/images/banner/s2.png" alt="AI Dialer Dashboard" class="img-fluid rounded shadow">
-        </div>
-        <div class="col-lg-6">
-          <h2 class="mb-4">Key AI Dialer Features</h2>
-          <ul class="benefit-list">
-            <li><i class="fa fa-check"></i> AI-Powered Call Distribution for Optimal Agent Efficiency</li>
-            <li><i class="fa fa-check"></i> Smart Dialing Modes with Predictive, Progressive & Preview Options</li>
-            <li><i class="fa fa-check"></i> Real-Time Campaign Monitoring & AI Analytics</li>
-            <li><i class="fa fa-check"></i> CRM Integration (Salesforce, HubSpot, Zendesk, etc.)</li>
-            <li><i class="fa fa-check"></i> AI-Based Lead Prioritization & Click-to-Call</li>
-            <li><i class="fa fa-check"></i> Call Recording, Transcription & Sentiment Analysis</li>
-            <li><i class="fa fa-check"></i> Supervisor Tools: Whisper, Barge, Coach</li>
-            <li><i class="fa fa-check"></i> Compliance: TCPA, DNC Scrubbing, PCI, GDPR</li>
-            <li><i class="fa fa-check"></i> Multi-Channel Support: Voice, SMS, Email</li>
-            <li><i class="fa fa-check"></i> API & Webhooks for AI Campaign Automation</li>
-          </ul>
-          <a class="voopo__btn btn--org mt-4" href="#">Explore All Features</a>
-        </div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <img src="assets/images/banner/ai-dialer.png" alt="AI Dialer Dashboard" class="img-fluid rounded shadow">
       </div>
-    </div>
-  </section>
-  
-  <!-- Pricing for AI Dialer -->
-  <div class="voopo__picing__area bg-image--1 pt--110 pb--120">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section__title text-center">
-            <span>Package</span>
-            <h2>Pick a Pricing Plan for AI Dialer</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row mt--30">
-        <!-- BASIC PLAN -->
-        <div class="col-sm-4 pricing-col">
-          <div class="pricing-card text-center">
-            <div class="pricing-title">
-              <i class="fa fa-paper-plane"></i>
-              <h2>Basic</h2>
-            </div>
-            <div class="pricing-price">
-              <h4><sup>$</sup>70</h4>
-            </div>
-            <div class="pricing-option">
-              <ul>
-                <li><i class="fa fa-check"></i> Up to 20 Agents</li>
-                <li><i class="fa fa-check"></i> AI-Powered Smart Dialing</li>
-                <li><i class="fa fa-check"></i> Basic Campaign Reporting</li>
-                <li><i class="fa fa-check"></i> CRM Integration (Limited)</li>
-                <li><i class="fa fa-times text-danger"></i> Advanced AI Analytics</li>
-                <li><i class="fa fa-times text-danger"></i> API Access</li>
-              </ul>
-            </div>
-            <a href="#">Order Now</a>
-          </div>
-        </div>
-  
-        <!-- BUSINESS PLAN -->
-        <div class="col-sm-4 pricing-col">
-          <div class="pricing-card text-center">
-            <div class="pricing-title">
-              <i class="fa fa-plane"></i>
-              <h2>Business</h2>
-            </div>
-            <div class="pricing-price">
-              <h4><sup>$</sup>180</h4>
-            </div>
-            <div class="pricing-option">
-              <ul>
-                <li><i class="fa fa-check"></i> Up to 50 Agents</li>
-                <li><i class="fa fa-check"></i> AI-Powered Smart Dialing with Predictive, Progressive & Preview Modes</li>
-                <li><i class="fa fa-check"></i> Real-Time AI Analytics & Campaign Monitoring</li>
-                <li><i class="fa fa-check"></i> CRM Integration (Salesforce, HubSpot, Zendesk)</li>
-                <li><i class="fa fa-check"></i> Call Recording & Reporting</li>
-                <li><i class="fa fa-check"></i> Supervisor Tools (Whisper, Barge, Coach)</li>
-              </ul>
-            </div>
-            <a href="#">Order Now</a>
-          </div>
-        </div>
-  
-        <!-- ENTERPRISE PLAN -->
-        <div class="col-sm-4 pricing-col">
-          <div class="pricing-card text-center">
-            <div class="pricing-title">
-              <i class="fa fa-rocket"></i>
-              <h2>Enterprise</h2>
-            </div>
-            <div class="pricing-price">
-              <h4>Custom Quote</h4>
-            </div>
-            <div class="pricing-option">
-              <ul>
-                <li><i class="fa fa-check"></i> Unlimited Agents</li>
-                <li><i class="fa fa-check"></i> Full AI Dialer Suite</li>
-                <li><i class="fa fa-check"></i> Advanced AI Analytics & Insights</li>
-                <li><i class="fa fa-check"></i> Dedicated Account Manager</li>
-                <li><i class="fa fa-check"></i> Multi-Region Data Centers & 99.99% Uptime</li>
-                <li><i class="fa fa-check"></i> API Access & Custom Integrations</li>
-                <li><i class="fa fa-check"></i> Full Training & Onboarding Support</li>
-              </ul>
-            </div>
-            <a href="#">Get a Quote</a>
-          </div>
-        </div>
+      <div class="col-lg-6">
+        <h2 class="mb-4">AI Dialer Features that Empower Your Team</h2>
+        <ul class="benefit-list">
+          <li><i class="fa fa-check"></i> Predictive, Progressive & Power Dialing Modes</li>
+          <li><i class="fa fa-check"></i> Intelligent Voicemail Detection & Disposition</li>
+          <li><i class="fa fa-check"></i> Real-Time Speech Analytics & Sentiment Scoring</li>
+          <li><i class="fa fa-check"></i> CRM Integration (Salesforce, Zoho, HubSpot, etc.)</li>
+          <li><i class="fa fa-check"></i> AI-Powered Call Routing & Lead Prioritization</li>
+          <li><i class="fa fa-check"></i> Live Monitoring, Whisper & Barge-in Tools</li>
+          <li><i class="fa fa-check"></i> Auto Call Recording & Transcription</li>
+          <li><i class="fa fa-check"></i> Real-Time Dashboards & Analytics</li>
+          <li><i class="fa fa-check"></i> Global Scalability with 99.99% Uptime</li>
+          <li><i class="fa fa-check"></i> 24/7 Support & Automated System Alerts</li>
+        </ul>
+        <a class="voopo__btn btn--org mt-4" href="#">Discover the AI Advantage</a>
       </div>
     </div>
   </div>
-  
-  <!-- CTA Section -->
-  <section class="cta-section">
+</section>
+  <div class="voopo__picing__area bg-image--1 pt--110 pb--120">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section__title text-center">
+                <span>Package</span>
+                <h2>Pick a Pricing Plan for Predictive Dialer</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row mt--30">
+            <!-- BASIC PLAN -->
+            <div class="col-sm-4 pricing-col">
+              <div class="pricing-card text-center">
+                <div class="pricing-title">
+                  <i class="fa fa-paper-plane"></i>
+                  <h2>Basic</h2>
+                </div>
+                <div class="pricing-price">
+                  <h4><sup>$</sup>60</h4>
+                </div>
+                <div class="pricing-option">
+                  <ul>
+                    <li><i class="fa fa-check"></i> Up to 20 Agents</li>
+                    <li><i class="fa fa-check"></i> Predictive & Preview Dialing</li>
+                    <li><i class="fa fa-check"></i> Basic Campaign Reporting</li>
+                    <li><i class="fa fa-check"></i> CRM Integration (Limited)</li>
+                    <li><i class="fa fa-times text-danger"></i> Advanced Analytics</li>
+                    <li><i class="fa fa-times text-danger"></i> API Access</li>
+                  </ul>
+                </div>
+                <a href="#">Order Now</a>
+              </div>
+            </div>
+      
+            <!-- BUSINESS PLAN -->
+            <div class="col-sm-4 pricing-col">
+              <div class="pricing-card text-center">
+                <div class="pricing-title">
+                  <i class="fa fa-plane"></i>
+                  <h2>Business</h2>
+                </div>
+                <div class="pricing-price">
+                  <h4><sup>$</sup>150</h4>
+                </div>
+                <div class="pricing-option">
+                  <ul>
+                    <li><i class="fa fa-check"></i> Up to 50 Agents</li>
+                    <li><i class="fa fa-check"></i> Predictive, Progressive & Preview Dialing</li>
+                    <li><i class="fa fa-check"></i> Real-Time Campaign Monitoring</li>
+                    <li><i class="fa fa-check"></i> CRM Integration (Salesforce, HubSpot, Zendesk)</li>
+                    <li><i class="fa fa-check"></i> Call Recording & Reporting</li>
+                    <li><i class="fa fa-check"></i> Supervisor Tools (Whisper, Barge, Coach)</li>
+                  </ul>
+                </div>
+                <a href="#">Order Now</a>
+              </div>
+            </div>
+      
+            <!-- ENTERPRISE PLAN -->
+            <div class="col-sm-4 pricing-col">
+              <div class="pricing-card text-center">
+                <div class="pricing-title">
+                  <i class="fa fa-rocket"></i>
+                  <h2>Enterprise</h2>
+                </div>
+                <div class="pricing-price">
+                  <h4>Custom Quote</h4>
+                </div>
+                <div class="pricing-option">
+                  <ul>
+                    <li><i class="fa fa-check"></i> Unlimited Agents</li>
+                    <li><i class="fa fa-check"></i> Full Predictive Dialer Suite</li>
+                    <li><i class="fa fa-check"></i> Advanced Analytics & AI Insights</li>
+                    <li><i class="fa fa-check"></i> Dedicated Account Manager</li>
+                    <li><i class="fa fa-check"></i> Multi-Region Data Centers & 99.99% Uptime</li>
+                    <li><i class="fa fa-check"></i> API Access & Custom Integrations</li>
+                    <li><i class="fa fa-check"></i> Full Training & Onboarding Support</li>
+                  </ul>
+                </div>
+                <a href="#">Get a Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <!-- CTA Section -->
+   <!-- CTA Section -->
+<section class="cta-section">
     <div class="container">
-      <h2>Boost Campaign Performance with AI Dialer!</h2>
+      <h2>Boost Your Outbound Campaigns with Predictive Dialer!</h2>
       <p class="lead" style="color: white;">
-        Automate dialing, optimize agent efficiency, and maximize conversions. Start your AI Dialer free trial today!
+        Increase agent productivity and conversion rates. Start your predictive dialing free trial today!
       </p>
       <a class="voopo__btn white__btn mt-4" href="#">Start Free Trial</a>
       <a class="voopo__btn btn--trans mt-4 ml-3" href="contact.html">Schedule Demo</a>
     </div>
   </section>
   
-  <!-- FAQ for AI Dialer -->
+  <!-- FAQ for Predictive Dialer -->
   <section class="faq-service" id="faq-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center mb-5">
-          <h2 class="custom-heading">AI Dialer FAQs</h2>
+          <h2 class="custom-heading">Predictive Dialer FAQs</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <div id="accordionAI" class="panora_accordion">
-  
+          <div id="accordionPredictive" class="panora_accordion">
+            
             <div class="card">
-              <div class="acc-header" id="ai1">
-                <h5><a data-toggle="collapse" href="#ai1c">What dialing modes are available?</a></h5>
+              <div class="acc-header" id="pd1">
+                <h5><a data-toggle="collapse" href="#pd1c">What dialing modes are available?</a></h5>
               </div>
-              <div id="ai1c" class="collapse show" data-parent="#accordionAI">
+              <div id="pd1c" class="collapse show" data-parent="#accordionPredictive">
                 <div class="card-body">
-                  Supports AI-assisted predictive, progressive, preview, and manual dialing modes for maximum efficiency.
+                  Supports predictive, progressive, preview, and manual dialing modes to maximize agent efficiency.
                 </div>
               </div>
             </div>
   
-            <div class="card">
-              <div class="acc-header" id="ai2">
-                <h5><a class="collapsed" data-toggle="collapse" href="#ai2c">Is it compliant with regulations?</a></h5>
+            <div class="card" data-aos="fade-down">
+              <div class="acc-header" id="pd2">
+                <h5><a class="collapsed" data-toggle="collapse" href="#pd2c">Is it compliant with regulations?</a></h5>
               </div>
-              <div id="ai2c" class="collapse" data-parent="#accordionAI">
+              <div id="pd2c" class="collapse" data-parent="#accordionPredictive">
                 <div class="card-body">
-                  Yes—TCPA, DNC scrubbing, PCI-DSS, GDPR compliance, with AI-assisted consent handling.
+                  Yes—TCPA, DNC scrubbing, PCI-DSS, GDPR compliance, and automatic consent handling.
                 </div>
               </div>
             </div>
   
-            <div class="card">
-              <div class="acc-header" id="ai3">
-                <h5><a class="collapsed" data-toggle="collapse" href="#ai3c">Can it integrate with my CRM?</a></h5>
+            <div class="card" data-aos="fade-down">
+              <div class="acc-header" id="pd3">
+                <h5><a class="collapsed" data-toggle="collapse" href="#pd3c">Can it integrate with my CRM?</a></h5>
               </div>
-              <div id="ai3c" class="collapse" data-parent="#accordionAI">
+              <div id="pd3c" class="collapse" data-parent="#accordionPredictive">
                 <div class="card-body">
                   Integrates seamlessly with Salesforce, HubSpot, Zendesk, and 100+ other CRMs via API.
                 </div>
               </div>
             </div>
   
-            <div class="card">
-              <div class="acc-header" id="ai4">
-                <h5><a class="collapsed" data-toggle="collapse" href="#ai4c">How does real-time monitoring work?</a></h5>
+            <div class="card" data-aos="fade-down">
+              <div class="acc-header" id="pd4">
+                <h5><a class="collapsed" data-toggle="collapse" href="#pd4c">How does real-time monitoring work?</a></h5>
               </div>
-              <div id="ai4c" class="collapse" data-parent="#accordionAI">
+              <div id="pd4c" class="collapse" data-parent="#accordionPredictive">
                 <div class="card-body">
-                  Supervisors can monitor live calls, view AI insights, and coach agents using whisper, barge, or listen-in features.
+                  Supervisors can monitor live calls, view metrics, and coach agents using whisper, barge, or listen-in features.
                 </div>
               </div>
             </div>
   
-            <div class="card">
-              <div class="acc-header" id="ai5">
-                <h5><a class="collapsed" data-toggle="collapse" href="#ai5c">What reporting and analytics are available?</a></h5>
+            <div class="card" data-aos="fade-down">
+              <div class="acc-header" id="pd5">
+                <h5><a class="collapsed" data-toggle="collapse" href="#pd5c">What reporting and analytics are available?</a></h5>
               </div>
-              <div id="ai5c" class="collapse" data-parent="#accordionAI">
+              <div id="pd5c" class="collapse" data-parent="#accordionPredictive">
                 <div class="card-body">
-                  Access AI-powered dashboards, predictive insights, historical reports, and automated KPI exports.
+                  Access real-time dashboards, historical reports, campaign summaries, and automated KPI exports.
                 </div>
               </div>
             </div>
@@ -463,7 +464,6 @@
 						</div>
 						<!-- End Single Wedget -->
 						<!-- Start Single Wedget -->
-             
 						<div class="col-lg-2 offset-lg-1 col-md-6 col-sm-6 col-12 xs__mt--40">
 							<div class="single__wedget">
 								<h2 class="ft__title">Quick Links</h2>
@@ -491,11 +491,8 @@
 <li><a href="service-detail-sip-trunking.html">SIP Trunking</a></li>
 <li><a href="service-detail-toll-free-number.html">Toll-Free Numbers</a></li>
 <li><a href="service-detail-call-center-solutions.html">Call Center Solutions</a></li>
-<li><a href="service-detail-international-calling.html">International Calling</a></li>
- <li><a href="service-detail-predective-dialer.html">Predective dialer</a></li>
- <li><a href="Service-detail-Ai-Dailer.html">Ai dialer</a></li>
- <li><a href="services-detail-lead-generatiom.html">lead-generation</a></li>
- <li><a href="service-detail-click-to-call.html">click-to-call</a></li>
+<li><a href="service.html">All</a></li>
+
 
 
 
@@ -569,7 +566,6 @@
 		</footer>
     <!-- //Footer Area -->
   </div>
-  <!-- //Main wrapper -->
 
   <a id="whatsapp-float" href="https://wa.me/923245708356?text=Hello%20I%20need%20help" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" title="Chat on WhatsApp 💬">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat">
@@ -579,6 +575,7 @@
   <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/active.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
@@ -605,7 +602,7 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 });
-
+ AOS.init();
 </script>
 </body>
 </html>
