@@ -67,6 +67,11 @@
                            <li><a href="service-detail-international-calling.html" class="color-blending">Internation Calling</a></li>
                            <li><a href="service-detail-call-center-solutions.html" class="color-blending">Call Center Solution</a></li>
                            <li><a href="service-detail-cloud-pbx.html" class="color-blending">Cloud PBX</a></li>
+                           <li><a href="Service-detail-Ai-Dailer.html" class="color-blending">Ai Dailer</a></li>
+                           <li><a href="service-detail-predective-dialer.html" class="color-blending">predective Dialer</a></li>
+                           <li><a href="service-detail-click-to-call.html" class="color-blending">Click to Call</a></li>
+
+
                             </ul>
                           </li>
                         <li><a href="blog.html">Blog</a></li>
@@ -78,8 +83,9 @@
                 </nav>
             </div>
             <div class="">
-                <div class="header__btn">
-                    <a class="voopo__btn white__btn" href="#">Get Started</a>
+                <div class="header__btn p-r">
+                    <a class="voopo__btn white__btn" target="_blank" rel="noopener noreferrer"
+                    aria-label="Chat on WhatsApp" href="https://wa.me/923245708356?text=Hello%20I%20need%20help">Get Started</a>
                 </div>
             </div>
         </div>
@@ -102,7 +108,7 @@
 			<div class="slide__activation">
 				<!-- Start Single Slide -->
 				<div class="slide slider_fixed_height gra__bg--1 d-flex align-items-center">
-					<div class="container">
+					<div class="container mb-mbile-hero">
 						<div class="row align-items-center">
 							<div class="col-lg-6 col-xl-5 col-md-6 col-sm-6 col-12">
 								<div class="content">
@@ -131,14 +137,14 @@ Whether you’re a startup or a multinational enterprise, Telza empowers your te
 		<!-- End Banner Area -->
 		<!-- Start Service Area -->
 		<div class="voopo__service " style="padding-top: 60px; margin-bottom: 60px;">
-			<div class="container">
+			<div class="container ">
 				<div class="row">
 					<!-- Start Single Service -->
 					<div class="col-lg-4 col-md-6 col-sm-6 col-12">
 						<div class="service">
 						 <i class="bi bi-cloud-check display-4 text-success mb-3"></i>
   <h2><a href="#">Global VoIP and Cloud PBX Services</a></h2>
-  <p class="text-justify text-muted" style="max-width: 600px; margin: 0 auto;">
+  <p class="text-justify text-muted " style="max-width: 600px; margin: 0 auto;">
     Experience enterprise-grade communication with Telza’s global VoIP and cloud PBX solutions. 
     Stay connected, scalable, and secure — wherever your business grows.
   </p>
@@ -353,7 +359,8 @@ operations.
 
         <br>
         <div class="text-center">
-          <a class="voopo__btn btn--org" href="#">Let's Get Started</a>
+          <a class="voopo__btn btn--org" target="_blank" rel="noopener noreferrer"
+           aria-label="Chat on WhatsApp" href="https://wa.me/923245708356?text=Hello%20I%20need%20help" >Let's Get Started</a>
         </div>
       </div>
     </div>
@@ -365,7 +372,6 @@ operations.
 </div>
 <!-- End Working Process -->
 
-		
 		<!-- Start Pricing Table Area -->
 	<!-- Start Pricing Table Area -->
 
@@ -670,59 +676,62 @@ operations.
             </div>
 
             <!-- Contact Form -->
-            <div class="col-md-7">
-              <div class="contact-form">
-                <h3 class="mb-4 text-dark">Send Us a Message</h3>
-                <form>
-                  <div class="row">
-                    <div class="col-md-6 mb-3">
-                      <label class="form-label">First Name</label>
-                      <input type="text" class="form-control" placeholder="John">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <label class="form-label">Last Name</label>
-                      <input type="text" class="form-control" placeholder="Doe">
-                    </div>
-                    
-                  </div>
+          <div class="col-md-7">
+  <div class="contact-form">
+    <h3 class="mb-4 text-dark">Send Us a Message</h3>
+    <form id="whatsappForm">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label">First Name</label>
+          <input type="text" id="firstName" class="form-control" placeholder="John" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Last Name</label>
+          <input type="text" id="lastName" class="form-control" placeholder="Doe" required>
+        </div>
+      </div>
 
-                  <div class="mb-3" style="display: flex; flex-direction: column;">
-  <label for="serviceSelect" class="form-label fw-bold">Select a Service</label>
-  <select class="form-select custom-select" id="serviceSelect" aria-label="Service selection">
-    <option selected disabled>Choose a service...</option>
-    <option value="voip">VOIP Services</option>
-    <option value="auto-dialer">Auto Dialer</option>
-    <option value="predictive-dialer">Predictive Dialer</option>
-    <option value="ai-dialer">AI Dialer</option>
-    <option value="lead-generation">Lead Generation</option>
-    <option value="click-to-call">Click to Call</option>
-    <option value="cloud-pbx">Cloud PBX</option>
-    <option value="sip-trunking">SIP Trunking</option>
-    <option value="toll-free">Toll Free Numbers</option>
-    <option value="call-center">Call Center Solution</option>
-    <option value="international-calling">International Calling</option>
-  </select>
+      <div class="mb-3" style="display: flex; flex-direction: column;">
+        <label for="serviceSelect" class="form-label fw-bold">Select a Service</label>
+        <select class="form-select custom-select" id="serviceSelect" required>
+          <option selected disabled value="">Choose a service...</option>
+          <option value="VOIP Services">VOIP Services</option>
+          <option value="Auto Dialer">Auto Dialer</option>
+          <option value="Predictive Dialer">Predictive Dialer</option>
+          <option value="AI Dialer">AI Dialer</option>
+          <option value="Lead Generation">Lead Generation</option>
+          <option value="Click to Call">Click to Call</option>
+          <option value="Cloud PBX">Cloud PBX</option>
+          <option value="SIP Trunking">SIP Trunking</option>
+          <option value="Toll Free Numbers">Toll Free Numbers</option>
+          <option value="Call Center Solution">Call Center Solution</option>
+          <option value="International Calling">International Calling</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Subject</label>
+        <input type="text" id="subject" class="form-control" placeholder="How can we help?" required>
+      </div>
+
+      <div class="mb-4">
+        <label class="form-label">Message</label>
+        <textarea id="message" class="form-control" rows="5" placeholder="Your message here..." required></textarea>
+      </div>
+
+      <button type="submit" class="voopo__btn btn--org text-center">Send Message via WhatsApp</button>
+    </form>
+  </div>
 </div>
 
-                  <div class="mb-3">
-                    <label class="form-label">Email</label>
-                    <input type="email" class="form-control" placeholder="john@example.com">
-                  </div>
 
-                  <div class="mb-3">
-                    <label class="form-label">Subject</label>
-                    <input type="text" class="form-control" placeholder="How can we help?">
-                  </div>
 
-                  <div class="mb-4">
-                    <label class="form-label">Message</label>
-                    <textarea class="form-control" rows="5" placeholder="Your message here..."></textarea>
-                  </div>
-
-                <a class="voopo__btn btn--org text-center" href="#">Send Message</a>
-                </form>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -919,7 +928,7 @@ operations.
      FAQ AREA END
 =================================-->
 		<!-- Footer Area -->
-	<footer id="footer" class="footer-area">
+		<footer id="footer" class="footer-area">
 			<div class="footer__top bg--cart-2">
 				<div class="container">
 					<div class="row">
@@ -944,7 +953,9 @@ operations.
   <li><a href="service.html">Service</a></li>
   <li><a href="about.html">About</a></li>
   <li><a href="blog.html">Blog</a></li>
+  <li><a href="pricing.html">Pricing</a></li>
   <li><a href="contact.html">Contact</a></li>
+
   
 								</ul>
 							</div>
@@ -1076,6 +1087,32 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 });
+  document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const firstName = document.getElementById('firstName').value.trim();
+    const lastName = document.getElementById('lastName').value.trim();
+    const service = document.getElementById('serviceSelect').value;
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    // 🔹 Replace with your WhatsApp number in international format (no + or spaces)
+    const phoneNumber = "923245708356"; // Example: +1 555 123 4567 → 15551234567
+
+    const text = `New Inquiry from Website:
+Name: ${firstName} ${lastName}
+Email: ${email}
+Service: ${service}
+Subject: ${subject}
+Message: ${message}`;
+
+    const encodedText = encodeURIComponent(text);
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+
+    // Open WhatsApp chat
+    window.open(whatsappUrl, '_blank');
+  });
 
   AOS.init();
 </script>

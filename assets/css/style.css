@@ -628,7 +628,16 @@ textarea {
     width: 450px; } }
 @media only screen and (max-width: 479px) {
   .container {
-    width: 300px; } }
+    width: 347px; }
+  .mb-mbile-hero{
+    position: relative;
+    bottom: 52px;
+  }
+  .p-18-relative{
+    position: relative;
+    right: 18px;
+  }
+  }
 /* Font specialized */
 .body--font {
   font-family: "Ubuntu", sans-serif; }
@@ -1493,7 +1502,7 @@ Blocks Styles
   align-items: center;
   display: flex;
   height: 100px;
-  left: 0;
+  left: -16px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -4652,17 +4661,20 @@ input[type="submit"] {
 /* renamed col selectors */
 .pricing-col:nth-child(1) .pricing-card,
 .pricing-col:nth-child(1) .pricing-card .pricing-title .fa {
-  background: linear-gradient(-45deg,#f403d1,#64b5f6);
+ background: #20C997;
+background: linear-gradient(35deg, rgba(32, 201, 151, 0.87) 0%, rgba(36, 79, 63, 0.67) 50%, rgba(40, 167, 69, 0.61) 100%);
 }
 
 .pricing-col:nth-child(2) .pricing-card,
 .pricing-col:nth-child(2) .pricing-card .pricing-title .fa {
-  background: linear-gradient(-45deg,#ffec61,#f321d7);
+ background: #20C997;
+background: linear-gradient(35deg, rgba(32, 201, 151, 0.87) 0%, rgba(36, 79, 63, 0.67) 50%, rgba(40, 167, 69, 0.61) 100%);
 }
 
 .pricing-col:nth-child(3) .pricing-card,
 .pricing-col:nth-child(3) .pricing-card .pricing-title .fa {
-  background: linear-gradient(-45deg,#24ff72,#9a4eff);
+ background: #20C997;
+background: linear-gradient(35deg, rgba(32, 201, 151, 0.87) 0%, rgba(36, 79, 63, 0.67) 50%, rgba(40, 167, 69, 0.61) 100%);
 }
 
 .pricing-card::before {
@@ -5316,4 +5328,13 @@ input[type="submit"] {
       margin-top: 12px;
       height: 40%;
     }
-}
+  /* a.voopo__btn, button.voopo__btn {
+      right: 90px;
+      } */
+       .p-r{
+        position: relative;
+        right: 90px;
+       }
+
+      
+    } 
