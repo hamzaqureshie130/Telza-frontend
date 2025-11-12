@@ -4644,7 +4644,7 @@ input[type="submit"] {
 /* renamed .card → .pricing-card */
 .pricing-card {
   position: relative;
-  max-width: 300px;
+  max-width: 364px;
   height: auto;
   background: linear-gradient(-45deg,#fe0847,#feae3f);
   border-radius: 15px;
