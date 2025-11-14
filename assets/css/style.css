@@ -722,10 +722,10 @@ textarea {
   background: #f8fafb; }
 
 .bg--cart-2 {
-  background: #142d22; }
+  background: radial-gradient(circle at center, #0d3f42 0%, #062a2d 100%); }
 
 .bg--cart-3 {
-  background: #142d22; }
+  background: radial-gradient(circle at center, #0d3f42 0%, #062a2d 100%); }
 
 .bg--cart-4 {
   background: #f8fafb; }
@@ -1236,7 +1236,7 @@ Elements Styles
 ---------------------*/
 a.voopo__btn,
 button.voopo__btn {
-  background: rgba(0, 0, 0, 0) linear-gradient(-90deg, #265153, #71FE8F) repeat scroll 0 0;
+  background: radial-gradient(circle at center, #0d3f42 0%, #062a2d 100%);
   border-radius: 24px;
   color: #ffffff;
   display: inline-block;
@@ -1457,7 +1457,7 @@ Blocks Styles
     position: relative; }
     .mainmenu > li.drop > ul.dropdown__menu {
       background: #fff none repeat scroll 0 0;
-      border-top: 3px solid green;
+      border-top: 3px solid radial-gradient(circle at center, #0d3f42 0%, #062a2d 100%);
       box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
       left: 0;
       margin: 0;
@@ -1552,7 +1552,7 @@ Blocks Styles
     Slider Styles
 -----------------*/
 .gra__bg--1 {
-    background: linear-gradient(to top, #142d22, #265342);
+    background: radial-gradient(circle at center, #0d3f42 0%, #062a2d 100%);
 }
 
 .slider--one .slider_fixed_height {
@@ -4662,19 +4662,19 @@ input[type="submit"] {
 .pricing-col:nth-child(1) .pricing-card,
 .pricing-col:nth-child(1) .pricing-card .pricing-title .fa {
  background: #20C997;
-background: linear-gradient(35deg, rgba(32, 201, 151, 0.87) 0%, rgba(36, 79, 63, 0.67) 50%, rgba(40, 167, 69, 0.61) 100%);
+background: radial-gradient(circle at center, #0d3f42 0%, #062a2d 100%);
 }
 
 .pricing-col:nth-child(2) .pricing-card,
 .pricing-col:nth-child(2) .pricing-card .pricing-title .fa {
  background: #20C997;
-background: linear-gradient(35deg, rgba(32, 201, 151, 0.87) 0%, rgba(36, 79, 63, 0.67) 50%, rgba(40, 167, 69, 0.61) 100%);
+background: radial-gradient(circle at center, #0d3f42 0%, #062a2d 100%);
 }
 
 .pricing-col:nth-child(3) .pricing-card,
 .pricing-col:nth-child(3) .pricing-card .pricing-title .fa {
  background: #20C997;
-background: linear-gradient(35deg, rgba(32, 201, 151, 0.87) 0%, rgba(36, 79, 63, 0.67) 50%, rgba(40, 167, 69, 0.61) 100%);
+background: radial-gradient(circle at center, #0d3f42 0%, #062a2d 100%);
 }
 
 .pricing-card::before {
@@ -4790,7 +4790,7 @@ background: linear-gradient(35deg, rgba(32, 201, 151, 0.87) 0%, rgba(36, 79, 63,
 }
 
 .voipo-service-front {
-  background: linear-gradient(45deg, #1a2929, #2d877f);
+  background: radial-gradient(circle at center, #0d3f42 0%, #062a2d 100%);
   color: white;
   display: flex;
   align-items: center;
@@ -4924,7 +4924,7 @@ background: linear-gradient(35deg, rgba(32, 201, 151, 0.87) 0%, rgba(36, 79, 63,
 
 /* Left Side - Info */
 .contact-info {
-  background: linear-gradient(135deg, #142D2D, #265153);
+  background: radial-gradient(circle at center, #0d3f42 0%, #062a2d 100%);
   padding: 40px;
   color: #ffffff;
 }
@@ -5134,7 +5134,7 @@ background: linear-gradient(35deg, rgba(32, 201, 151, 0.87) 0%, rgba(36, 79, 63,
 
 /* Header style after scrolling */
 #header-area.scrolled {
-    background-color: #255140; /* Change to any green you like */
+    background-color:#0d3f42; /* Change to any green you like */
     
 }
 /* Header text and links on scroll */
@@ -5230,7 +5230,7 @@ background: linear-gradient(35deg, rgba(32, 201, 151, 0.87) 0%, rgba(36, 79, 63,
 }
 
 .color-blending:hover {
-  background-color: #244f3f !important; /* ya koi bhi green shade */
+  background-color: radial-gradient(circle at center, #0d3f42 0%, #062a2d 100%) !important; /* ya koi bhi green shade */
   color: #fff !important; /* text visible rahe */
 }
 
@@ -5338,3 +5338,6 @@ background: linear-gradient(35deg, rgba(32, 201, 151, 0.87) 0%, rgba(36, 79, 63,
 
       
     } 
+    .text-grident{
+      color:radial-gradient(circle at center, #0d3f42 0%, #062a2d 100%);
+    }
